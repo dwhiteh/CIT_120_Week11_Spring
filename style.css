@@ -1,0 +1,128 @@
+header {
+    background-color: #0EE884;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 15px;
+
+}
+
+header h1 {
+    font-family: Candara;
+    font-weight: bold;
+}
+
+.card-content p {
+    font-family: Candara;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-area {
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    border: 10px solid #0EE884;
+    border-radius: 15px;
+    background-color: #FFFF72;
+
+
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -1em;
+
+}
+
+.card {
+    background-color: #0FF2CA;
+    border: 5px solid #F45FE8;
+    border-radius: 15px;
+}
+
+.card:hover {
+
+    box-shadow: 10px 10px 8px #18C8DB;
+    transform: translate3D(0,-1px,0) scale(1.03);
+
+}
+
+header img {
+    height: 100px;
+    width: 90px;
+    position: absolute;
+    left: 40px;
+    top: 18px;
+}
+
+.pixHolder img {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.card-content h2 {
+    padding: 10px;
+    text-align: center;
+    font-family: Candara;
+    font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+    .cards {
+        margin-top: inherit;
+    }
+
+    .card {
+        flex: 0 0 calc(95% - 10px);
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    header img {
+        display: none;
+    }
+    .pixHolder img {
+        width: 40%;
+        height: 40%;
+
+    }
+}
+@media screen and (min-width: 700px) {
+    .cards {
+        margin-top: inherit;
+    }
+
+    .card {
+        flex: 0 0 calc(30% - 10px);
+        margin-bottom: 2em;
+
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .cards {
+        margin-top: inherit;
+    }
+
+    .card {
+        flex: 0 0 calc(30% - 10px);
+        margin-bottom: 2em;
+
+    }
+
+    .main-area {
+        width: 1000px;
+        margin: auto;
+    }
+
+}
